@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25F671335FB8FEB969F35C59 /* Pods_VerdantEarth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D1DEBB87C283BD3A1CAA5 /* Pods_VerdantEarth.framework */; };
+		668C4D8F278B59C7007A2CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C4D8E278B59C7007A2CF7 /* AppDelegate.swift */; };
+		668C4D93278B59C7007A2CF7 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C4D92278B59C7007A2CF7 /* IntroductionViewController.swift */; };
+		668C4D96278B59C7007A2CF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668C4D94278B59C7007A2CF7 /* Main.storyboard */; };
+		668C4D98278B59CB007A2CF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668C4D97278B59CB007A2CF7 /* Assets.xcassets */; };
+		668C4D9B278B59CB007A2CF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668C4D99278B59CB007A2CF7 /* LaunchScreen.storyboard */; };
+		668C4DA7278B5DE1007A2CF7 /* HindSiliguri-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 668C4DA2278B5DE0007A2CF7 /* HindSiliguri-Light.ttf */; };
+		668C4DA8278B5DE1007A2CF7 /* HindSiliguri-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 668C4DA3278B5DE0007A2CF7 /* HindSiliguri-SemiBold.ttf */; };
+		668C4DA9278B5DE1007A2CF7 /* HindSiliguri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 668C4DA4278B5DE0007A2CF7 /* HindSiliguri-Regular.ttf */; };
+		668C4DAA278B5DE1007A2CF7 /* HindSiliguri-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 668C4DA5278B5DE0007A2CF7 /* HindSiliguri-Medium.ttf */; };
+		668C4DAB278B5DE1007A2CF7 /* HindSiliguri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 668C4DA6278B5DE1007A2CF7 /* HindSiliguri-Bold.ttf */; };
+		668C4DAF278B5FB5007A2CF7 /* BaseUiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C4DAE278B5FB5007A2CF7 /* BaseUiViewController.swift */; };
+		668C4DB3278B616A007A2CF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C4DB2278B616A007A2CF7 /* HomeViewController.swift */; };
+		668C4DB8278B83AA007A2CF7 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C4DB7278B83AA007A2CF7 /* UPCarouselFlowLayout.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		668C4D8B278B59C7007A2CF7 /* VerdantEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerdantEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		668C4D8E278B59C7007A2CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		668C4D92278B59C7007A2CF7 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
+		668C4D95278B59C7007A2CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		668C4D97278B59CB007A2CF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		668C4D9A278B59CB007A2CF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		668C4D9C278B59CB007A2CF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668C4DA2278B5DE0007A2CF7 /* HindSiliguri-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Light.ttf"; sourceTree = "<group>"; };
+		668C4DA3278B5DE0007A2CF7 /* HindSiliguri-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-SemiBold.ttf"; sourceTree = "<group>"; };
+		668C4DA4278B5DE0007A2CF7 /* HindSiliguri-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Regular.ttf"; sourceTree = "<group>"; };
+		668C4DA5278B5DE0007A2CF7 /* HindSiliguri-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Medium.ttf"; sourceTree = "<group>"; };
+		668C4DA6278B5DE1007A2CF7 /* HindSiliguri-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HindSiliguri-Bold.ttf"; sourceTree = "<group>"; };
+		668C4DAE278B5FB5007A2CF7 /* BaseUiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUiViewController.swift; sourceTree = "<group>"; };
+		668C4DB2278B616A007A2CF7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		668C4DB7278B83AA007A2CF7 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		9CD853392B73398435026E40 /* Pods-VerdantEarth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerdantEarth.release.xcconfig"; path = "Target Support Files/Pods-VerdantEarth/Pods-VerdantEarth.release.xcconfig"; sourceTree = "<group>"; };
+		D52D1DEBB87C283BD3A1CAA5 /* Pods_VerdantEarth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VerdantEarth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E433A9244FB5EB5386F9ACCD /* Pods-VerdantEarth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerdantEarth.debug.xcconfig"; path = "Target Support Files/Pods-VerdantEarth/Pods-VerdantEarth.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		668C4D88278B59C7007A2CF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F671335FB8FEB969F35C59 /* Pods_VerdantEarth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		668C4D82278B59C7007A2CF7 = {
+			isa = PBXGroup;
+			children = (
+				668C4D8D278B59C7007A2CF7 /* VerdantEarth */,
+				668C4D8C278B59C7007A2CF7 /* Products */,
+				6C84FEAC6AC7F4252F50EA6B /* Pods */,
+				EB6301698B14559D1889AE23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		668C4D8C278B59C7007A2CF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				668C4D8B278B59C7007A2CF7 /* VerdantEarth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		668C4D8D278B59C7007A2CF7 /* VerdantEarth */ = {
+			isa = PBXGroup;
+			children = (
+				668C4D8E278B59C7007A2CF7 /* AppDelegate.swift */,
+				668C4DA6278B5DE1007A2CF7 /* HindSiliguri-Bold.ttf */,
+				668C4DA2278B5DE0007A2CF7 /* HindSiliguri-Light.ttf */,
+				668C4DA5278B5DE0007A2CF7 /* HindSiliguri-Medium.ttf */,
+				668C4DA4278B5DE0007A2CF7 /* HindSiliguri-Regular.ttf */,
+				668C4DA3278B5DE0007A2CF7 /* HindSiliguri-SemiBold.ttf */,
+				668C4DAD278B5F7C007A2CF7 /* Helper Classes */,
+				668C4DAC278B5F5C007A2CF7 /* View Controllers */,
+				668C4D94278B59C7007A2CF7 /* Main.storyboard */,
+				668C4D99278B59CB007A2CF7 /* LaunchScreen.storyboard */,
+				668C4D97278B59CB007A2CF7 /* Assets.xcassets */,
+				668C4D9C278B59CB007A2CF7 /* Info.plist */,
+			);
+			path = VerdantEarth;
+			sourceTree = "<group>";
+		};
+		668C4DAC278B5F5C007A2CF7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				668C4DB4278B7DA2007A2CF7 /* Basic */,
+				668C4DB5278B7DAA007A2CF7 /* Main */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		668C4DAD278B5F7C007A2CF7 /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				668C4DAE278B5FB5007A2CF7 /* BaseUiViewController.swift */,
+				668C4DB7278B83AA007A2CF7 /* UPCarouselFlowLayout.swift */,
+			);
+			path = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		668C4DB4278B7DA2007A2CF7 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				668C4D92278B59C7007A2CF7 /* IntroductionViewController.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		668C4DB5278B7DAA007A2CF7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				668C4DB2278B616A007A2CF7 /* HomeViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6C84FEAC6AC7F4252F50EA6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E433A9244FB5EB5386F9ACCD /* Pods-VerdantEarth.debug.xcconfig */,
+				9CD853392B73398435026E40 /* Pods-VerdantEarth.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EB6301698B14559D1889AE23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D52D1DEBB87C283BD3A1CAA5 /* Pods_VerdantEarth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		668C4D8A278B59C7007A2CF7 /* VerdantEarth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 668C4D9F278B59CB007A2CF7 /* Build configuration list for PBXNativeTarget "VerdantEarth" */;
+			buildPhases = (
+				9CF404D17CCE98B50EEC8F30 /* [CP] Check Pods Manifest.lock */,
+				668C4D87278B59C7007A2CF7 /* Sources */,
+				668C4D88278B59C7007A2CF7 /* Frameworks */,
+				668C4D89278B59C7007A2CF7 /* Resources */,
+				8129A018D34DC344E65980D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VerdantEarth;
+			productName = VerdantEarth;
+			productReference = 668C4D8B278B59C7007A2CF7 /* VerdantEarth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		668C4D83278B59C7007A2CF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					668C4D8A278B59C7007A2CF7 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 668C4D86278B59C7007A2CF7 /* Build configuration list for PBXProject "VerdantEarth" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 668C4D82278B59C7007A2CF7;
+			productRefGroup = 668C4D8C278B59C7007A2CF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				668C4D8A278B59C7007A2CF7 /* VerdantEarth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		668C4D89278B59C7007A2CF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668C4DA9278B5DE1007A2CF7 /* HindSiliguri-Regular.ttf in Resources */,
+				668C4D9B278B59CB007A2CF7 /* LaunchScreen.storyboard in Resources */,
+				668C4DAB278B5DE1007A2CF7 /* HindSiliguri-Bold.ttf in Resources */,
+				668C4D98278B59CB007A2CF7 /* Assets.xcassets in Resources */,
+				668C4DAA278B5DE1007A2CF7 /* HindSiliguri-Medium.ttf in Resources */,
+				668C4DA7278B5DE1007A2CF7 /* HindSiliguri-Light.ttf in Resources */,
+				668C4D96278B59C7007A2CF7 /* Main.storyboard in Resources */,
+				668C4DA8278B5DE1007A2CF7 /* HindSiliguri-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8129A018D34DC344E65980D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerdantEarth/Pods-VerdantEarth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VerdantEarth/Pods-VerdantEarth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VerdantEarth/Pods-VerdantEarth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CF404D17CCE98B50EEC8F30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VerdantEarth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		668C4D87278B59C7007A2CF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				668C4D93278B59C7007A2CF7 /* IntroductionViewController.swift in Sources */,
+				668C4DAF278B5FB5007A2CF7 /* BaseUiViewController.swift in Sources */,
+				668C4D8F278B59C7007A2CF7 /* AppDelegate.swift in Sources */,
+				668C4DB3278B616A007A2CF7 /* HomeViewController.swift in Sources */,
+				668C4DB8278B83AA007A2CF7 /* UPCarouselFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		668C4D94278B59C7007A2CF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				668C4D95278B59C7007A2CF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		668C4D99278B59CB007A2CF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				668C4D9A278B59CB007A2CF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		668C4D9D278B59CB007A2CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		668C4D9E278B59CB007A2CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		668C4DA0278B59CB007A2CF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E433A9244FB5EB5386F9ACCD /* Pods-VerdantEarth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YKHZ9Y77T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VerdantEarth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Verdant Earth";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shwaitkumar.VerdantEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		668C4DA1278B59CB007A2CF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD853392B73398435026E40 /* Pods-VerdantEarth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3YKHZ9Y77T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VerdantEarth/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Verdant Earth";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shwaitkumar.VerdantEarth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		668C4D86278B59C7007A2CF7 /* Build configuration list for PBXProject "VerdantEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				668C4D9D278B59CB007A2CF7 /* Debug */,
+				668C4D9E278B59CB007A2CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		668C4D9F278B59CB007A2CF7 /* Build configuration list for PBXNativeTarget "VerdantEarth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				668C4DA0278B59CB007A2CF7 /* Debug */,
+				668C4DA1278B59CB007A2CF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 668C4D83278B59C7007A2CF7 /* Project object */;
+}
