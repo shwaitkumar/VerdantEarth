@@ -5,13 +5,23 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HindSiliguri-Light.ttf">
+            <string>HindSiliguri-Light</string>
+        </array>
+        <array key="HindSiliguri-Medium.ttf">
+            <string>HindSiliguri-Medium</string>
+        </array>
         <array key="HindSiliguri-Regular.ttf">
             <string>HindSiliguri-Regular</string>
+        </array>
+        <array key="HindSiliguri-SemiBold.ttf">
+            <string>HindSiliguri-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -144,19 +154,184 @@
                     <view key="view" contentMode="scaleToFill" id="wDO-lL-1aF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ctw-5E-GrK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardTableViewCell" id="KYg-Ji-ACX" customClass="CardTableViewCell" customModule="VerdantEarth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="104.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KYg-Ji-ACX" id="OyH-eN-old">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="104.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-GJ-sFV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="104.5"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFC-7D-sh0">
+                                                            <rect key="frame" x="16" y="16" width="72" height="72.5"/>
+                                                            <color key="backgroundColor" name="spearMint"/>
+                                                        </view>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9XP-ns-tn4">
+                                                            <rect key="frame" x="16" y="17.5" width="72" height="69.5"/>
+                                                            <color key="tintColor" name="cards"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="72" id="LDL-Ls-I6B"/>
+                                                                <constraint firstAttribute="height" constant="72" id="qmC-zD-NAi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVG-Hf-IHR">
+                                                            <rect key="frame" x="16" y="16" width="72" height="72.5"/>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ASj-g7-7hz">
+                                                            <rect key="frame" x="104" y="16" width="294" height="72.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykI-cu-l7E">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="294" height="32.5"/>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Light" family="Hind Siliguri" pointSize="14"/>
+                                                                    <color key="textColor" name="labelColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nd4-Y5-hFk">
+                                                                    <rect key="frame" x="0.0" y="40.5" width="294" height="32"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carbon Emitted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BB-zV-lgW">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="143" height="32"/>
+                                                                            <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                            <color key="textColor" name="labelColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX Kg" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lN-gp-i4X">
+                                                                            <rect key="frame" x="151" y="0.0" width="143" height="32"/>
+                                                                            <fontDescription key="fontDescription" name="HindSiliguri-SemiBold" family="Hind Siliguri" pointSize="16"/>
+                                                                            <color key="textColor" name="labelColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="9XP-ns-tn4" secondAttribute="bottom" constant="16" id="10M-V1-uQy"/>
+                                                        <constraint firstItem="YVG-Hf-IHR" firstAttribute="bottom" secondItem="9XP-ns-tn4" secondAttribute="bottom" id="2yj-oy-UXQ"/>
+                                                        <constraint firstItem="rFC-7D-sh0" firstAttribute="top" secondItem="9XP-ns-tn4" secondAttribute="top" id="7U7-AY-tcy"/>
+                                                        <constraint firstItem="YVG-Hf-IHR" firstAttribute="trailing" secondItem="9XP-ns-tn4" secondAttribute="trailing" id="DJi-0w-T8b"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ASj-g7-7hz" secondAttribute="trailing" constant="16" id="HRo-IL-9bL"/>
+                                                        <constraint firstItem="rFC-7D-sh0" firstAttribute="trailing" secondItem="9XP-ns-tn4" secondAttribute="trailing" id="JKx-dI-9jf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ASj-g7-7hz" secondAttribute="bottom" constant="16" id="KZm-gb-sJ5"/>
+                                                        <constraint firstItem="rFC-7D-sh0" firstAttribute="bottom" secondItem="9XP-ns-tn4" secondAttribute="bottom" id="VA9-0z-iZU"/>
+                                                        <constraint firstItem="YVG-Hf-IHR" firstAttribute="top" secondItem="9XP-ns-tn4" secondAttribute="top" id="WI5-tp-dPR"/>
+                                                        <constraint firstItem="9XP-ns-tn4" firstAttribute="top" secondItem="Spa-GJ-sFV" secondAttribute="top" constant="16" id="cxP-SE-Pbe"/>
+                                                        <constraint firstItem="rFC-7D-sh0" firstAttribute="leading" secondItem="9XP-ns-tn4" secondAttribute="leading" id="e7l-a1-IpV"/>
+                                                        <constraint firstItem="ASj-g7-7hz" firstAttribute="leading" secondItem="9XP-ns-tn4" secondAttribute="trailing" constant="16" id="eQ0-7m-U3J"/>
+                                                        <constraint firstItem="YVG-Hf-IHR" firstAttribute="leading" secondItem="9XP-ns-tn4" secondAttribute="leading" id="fV6-vE-8fo"/>
+                                                        <constraint firstItem="9XP-ns-tn4" firstAttribute="leading" secondItem="Spa-GJ-sFV" secondAttribute="leading" constant="16" id="jRW-Ua-Bm2"/>
+                                                        <constraint firstItem="ASj-g7-7hz" firstAttribute="top" secondItem="Spa-GJ-sFV" secondAttribute="top" constant="16" id="n92-NY-qaz"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="Spa-GJ-sFV" firstAttribute="top" secondItem="OyH-eN-old" secondAttribute="top" id="Fvw-h8-S5Y"/>
+                                                <constraint firstItem="Spa-GJ-sFV" firstAttribute="leading" secondItem="OyH-eN-old" secondAttribute="leading" id="cqp-F3-VCj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Spa-GJ-sFV" secondAttribute="bottom" id="hVm-z0-31q"/>
+                                                <constraint firstAttribute="trailing" secondItem="Spa-GJ-sFV" secondAttribute="trailing" id="mBf-bK-3rk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="cards"/>
+                                        <connections>
+                                            <outlet property="ivBgUser" destination="9XP-ns-tn4" id="Jui-xb-c2b"/>
+                                            <outlet property="ivUser" destination="YVG-Hf-IHR" id="h90-uI-1Cv"/>
+                                            <outlet property="lblName" destination="ykI-cu-l7E" id="0ko-xm-O45"/>
+                                            <outlet property="lblTotalCarbonEmitted" destination="8lN-gp-i4X" id="rAu-Ls-OGn"/>
+                                            <outlet property="viewBgUser" destination="rFC-7D-sh0" id="XPS-TT-e5c"/>
+                                            <outlet property="viewCardProfile" destination="Spa-GJ-sFV" id="JX5-Qz-q0N"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" id="WhC-eh-K09" customClass="HomeTableViewCell" customModule="VerdantEarth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="149" width="414" height="56.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WhC-eh-K09" id="ilM-af-tAd">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="56.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sgi-f0-0sS">
+                                                    <rect key="frame" x="16" y="17.5" width="24" height="22"/>
+                                                    <color key="tintColor" name="spearMint"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="24" id="CVi-hp-yUu"/>
+                                                        <constraint firstAttribute="width" constant="24" id="dRW-bO-MDB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fuel to CO₂" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frT-pM-m44">
+                                                    <rect key="frame" x="56" y="17" width="342" height="23"/>
+                                                    <fontDescription key="fontDescription" name="HindSiliguri-Regular" family="Hind Siliguri" pointSize="14"/>
+                                                    <color key="textColor" name="labelColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="sgi-f0-0sS" secondAttribute="bottom" constant="16" id="3Zz-QQ-NTD"/>
+                                                <constraint firstAttribute="trailing" secondItem="frT-pM-m44" secondAttribute="trailing" constant="16" id="HWZ-Hh-Ksq"/>
+                                                <constraint firstItem="sgi-f0-0sS" firstAttribute="leading" secondItem="ilM-af-tAd" secondAttribute="leading" constant="16" id="RQs-aE-HJH"/>
+                                                <constraint firstItem="frT-pM-m44" firstAttribute="centerY" secondItem="sgi-f0-0sS" secondAttribute="centerY" id="bpg-8S-dFp"/>
+                                                <constraint firstItem="sgi-f0-0sS" firstAttribute="top" secondItem="ilM-af-tAd" secondAttribute="top" constant="16" id="jBK-tD-l7V"/>
+                                                <constraint firstItem="frT-pM-m44" firstAttribute="leading" secondItem="sgi-f0-0sS" secondAttribute="trailing" constant="16" id="th4-CU-CkG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" name="cards"/>
+                                        <connections>
+                                            <outlet property="ivIcon" destination="sgi-f0-0sS" id="nCV-SK-hrJ"/>
+                                            <outlet property="lblTitle" destination="frT-pM-m44" id="4yS-85-OlK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Thz-OY-7uv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ctw-5E-GrK" firstAttribute="trailing" secondItem="Thz-OY-7uv" secondAttribute="trailing" id="2zp-9O-cr8"/>
+                            <constraint firstItem="Ctw-5E-GrK" firstAttribute="top" secondItem="wDO-lL-1aF" secondAttribute="top" id="3i7-r6-u4l"/>
+                            <constraint firstItem="Ctw-5E-GrK" firstAttribute="leading" secondItem="Thz-OY-7uv" secondAttribute="leading" id="A7U-f2-wzX"/>
+                            <constraint firstAttribute="bottom" secondItem="Ctw-5E-GrK" secondAttribute="bottom" id="jX7-03-7C1"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblHome" destination="Ctw-5E-GrK" id="FkG-E8-V1Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MW8-I2-mBo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1829" y="98"/>
+            <point key="canvasLocation" x="1827.5362318840582" y="97.767857142857139"/>
+        </scene>
+        <!--Calculate Carbon Footprint View Controller-->
+        <scene sceneID="Vy4-Yy-9sX">
+            <objects>
+                <viewController storyboardIdentifier="CalculateCarbonFootprintViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KmG-0c-1QH" customClass="CalculateCarbonFootprintViewController" customModule="VerdantEarth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acm-0A-hZp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="VeA-li-TxH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q3y-1g-O6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="98"/>
         </scene>
     </scenes>
     <resources>
         <image name="leaf.fill" catalog="system" width="128" height="106"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <namedColor name="background">
             <color red="0.6940000057220459" green="0.84700000286102295" blue="0.71799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cards">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="labelColor">
             <color red="0.18400000035762787" green="0.32199999690055847" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -164,8 +339,14 @@
         <namedColor name="limeGreen">
             <color red="0.46299999952316284" green="0.72699999809265137" blue="0.27799999713897705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="spearMint">
+            <color red="0.57999998331069946" green="0.78799998760223389" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
