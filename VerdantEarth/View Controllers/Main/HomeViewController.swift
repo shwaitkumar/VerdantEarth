@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tblHome: UITableView!
     
     var buttonTag = ""
+    var cellTag = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +31,26 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 16.0
-    }
+//    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+//        return 16.0
+//    }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 16.0
+        return 32.0
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
+    
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        if section == 0 {
+//            return "1"
+//        }
+//        else {
+//            return "2"
+//        }
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //        return 1
@@ -116,34 +126,42 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         else {
             if indexPath.row == 0 {
                 buttonTag = "Fuel to " + BaseUiViewController().carbonDioxideSymbol()
+                cellTag = 0
                 pushVC()
             }
             else if indexPath.row == 1 {
                 buttonTag = BaseUiViewController().carbonDioxideSymbol() + " from Public Transit"
+                cellTag = 1
                 pushVC()
             }
             else if indexPath.row == 2 {
                 buttonTag = BaseUiViewController().carbonDioxideSymbol() + " from Flight"
+                cellTag = 2
                 pushVC()
             }
             else if indexPath.row == 3 {
                 buttonTag = BaseUiViewController().carbonDioxideSymbol() + " from Motor Bike"
+                cellTag = 3
                 pushVC()
             }
             else if indexPath.row == 4 {
                 buttonTag = BaseUiViewController().carbonDioxideSymbol() + " from Car Travel"
+                cellTag = 4
                 pushVC()
             }
             else if indexPath.row == 5 {
                 buttonTag = "Traditional Hydro to " + BaseUiViewController().carbonDioxideSymbol()
+                cellTag = 5
                 pushVC()
             }
             else if indexPath.row == 6 {
                 buttonTag = "Clean Hydro to " + BaseUiViewController().carbonDioxideSymbol()
+                cellTag = 6
                 pushVC()
             }
             else {
                 buttonTag = "Tree Equivalent"
+                cellTag = 7
                 pushVC()
             }
         }
@@ -153,6 +171,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func pushVC() {
         let vc = storyboard?.instantiateViewController(withIdentifier: "CalculateCarbonFootprintViewController") as! CalculateCarbonFootprintViewController
         vc.viewFrom = buttonTag
+        vc.cellTag = cellTag
         navigationController?.pushViewController(vc, animated: true)
     }
     

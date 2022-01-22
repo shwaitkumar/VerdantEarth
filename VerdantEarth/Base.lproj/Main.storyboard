@@ -233,7 +233,6 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="Spa-GJ-sFV" firstAttribute="top" secondItem="OyH-eN-old" secondAttribute="top" id="Fvw-h8-S5Y"/>
                                                 <constraint firstItem="Spa-GJ-sFV" firstAttribute="leading" secondItem="OyH-eN-old" secondAttribute="leading" id="cqp-F3-VCj"/>
@@ -315,13 +314,201 @@
                     <view key="view" contentMode="scaleToFill" id="acm-0A-hZp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2pB-o8-kEr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CalculateCarbonFootprintTableViewCell" id="aha-BW-KlP" customClass="CalculateCarbonFootprintTableViewCell" customModule="VerdantEarth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="580"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aha-BW-KlP" id="Kbq-PR-blQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="580"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8On-lF-pWQ">
+                                                    <rect key="frame" x="16" y="32" width="382" height="516"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bkq-uX-Hul">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="34" id="ZU3-4q-BQj"/>
+                                                            </constraints>
+                                                            <color key="textColor" name="labelColor"/>
+                                                            <fontDescription key="fontDescription" name="HindSiliguri-SemiBold" family="Hind Siliguri" pointSize="17"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2rI-iD-1ta">
+                                                            <rect key="frame" x="0.0" y="66" width="382" height="384"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="137-qb-4B6">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="CvS-e2-nLx"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqK-Mi-N3t">
+                                                                    <rect key="frame" x="0.0" y="40" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="epU-Ti-chH"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fho-fg-9ZU">
+                                                                    <rect key="frame" x="0.0" y="80" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="8Je-8Y-wnc"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbO-gD-l3a">
+                                                                    <rect key="frame" x="0.0" y="120" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="zfF-ad-Aan"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qar-jF-Wcu">
+                                                                    <rect key="frame" x="0.0" y="160" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="Tjc-qg-1FL"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0m-Ja-rgo">
+                                                                    <rect key="frame" x="0.0" y="200" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="Evb-5p-uja"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTU-8a-iaC">
+                                                                    <rect key="frame" x="0.0" y="240" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="6wv-kS-WAJ"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lvh-iw-9s5">
+                                                                    <rect key="frame" x="0.0" y="280" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="tY2-2w-UH2"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUM-5V-pYS">
+                                                                    <rect key="frame" x="0.0" y="320" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="Ksp-oP-Eeh"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="otM-Qn-wRu">
+                                                                    <rect key="frame" x="0.0" y="360" width="382" height="24"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="24" id="xK9-vx-seL"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Calculate">
+                                                                        <color key="titleColor" name="labelColor"/>
+                                                                    </state>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIa-YE-Y7D">
+                                                            <rect key="frame" x="0.0" y="482" width="382" height="34"/>
+                                                            <color key="backgroundColor" name="limeGreen"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="34" id="9yt-gH-3m9"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Calculate">
+                                                                <fontDescription key="titleFontDescription" name="HindSiliguri-Medium" family="Hind Siliguri" pointSize="14"/>
+                                                                <color key="baseForegroundColor" name="labelColor"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="8On-lF-pWQ" secondAttribute="trailing" constant="16" id="SbP-J9-eD1"/>
+                                                <constraint firstItem="8On-lF-pWQ" firstAttribute="top" secondItem="Kbq-PR-blQ" secondAttribute="top" constant="32" id="cf9-r7-je6"/>
+                                                <constraint firstAttribute="bottom" secondItem="8On-lF-pWQ" secondAttribute="bottom" constant="32" id="sA2-1g-3nh"/>
+                                                <constraint firstItem="8On-lF-pWQ" firstAttribute="leading" secondItem="Kbq-PR-blQ" secondAttribute="leading" constant="16" id="ym2-za-gYx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btn0" destination="137-qb-4B6" id="pK2-wP-gQf"/>
+                                            <outlet property="btn1" destination="nqK-Mi-N3t" id="Uf0-mD-ei7"/>
+                                            <outlet property="btn2" destination="Fho-fg-9ZU" id="bn1-NH-QcT"/>
+                                            <outlet property="btn3" destination="EbO-gD-l3a" id="s0J-Ye-ptA"/>
+                                            <outlet property="btn4" destination="Qar-jF-Wcu" id="3Oj-zA-8hg"/>
+                                            <outlet property="btn5" destination="B0m-Ja-rgo" id="obN-Cr-Lhj"/>
+                                            <outlet property="btn6" destination="DTU-8a-iaC" id="Mra-Lc-xXk"/>
+                                            <outlet property="btn7" destination="Lvh-iw-9s5" id="2gI-yc-sZp"/>
+                                            <outlet property="btn8" destination="YUM-5V-pYS" id="Mqw-AR-33W"/>
+                                            <outlet property="btn9" destination="otM-Qn-wRu" id="tiN-k2-16M"/>
+                                            <outlet property="btnCalculate" destination="kIa-YE-Y7D" id="clG-ra-7kM"/>
+                                            <outlet property="tf" destination="bkq-uX-Hul" id="4Eg-ja-4Y5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VeA-li-TxH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2pB-o8-kEr" firstAttribute="top" secondItem="acm-0A-hZp" secondAttribute="top" id="MwE-il-qlK"/>
+                            <constraint firstAttribute="bottom" secondItem="2pB-o8-kEr" secondAttribute="bottom" id="Xfw-qy-YmL"/>
+                            <constraint firstItem="2pB-o8-kEr" firstAttribute="trailing" secondItem="VeA-li-TxH" secondAttribute="trailing" id="zSE-6B-8zB"/>
+                            <constraint firstItem="2pB-o8-kEr" firstAttribute="leading" secondItem="VeA-li-TxH" secondAttribute="leading" id="zfl-zP-C87"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tblCalculateCarbonFootprint" destination="2pB-o8-kEr" id="vnF-PV-PKJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q3y-1g-O6G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2699" y="98"/>
+            <point key="canvasLocation" x="2698.5507246376815" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
