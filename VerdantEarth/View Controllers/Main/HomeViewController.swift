@@ -121,7 +121,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
         if indexPath.section == 0 {
-            print("x")
+            self.performSegue(withIdentifier: "toProfile", sender: nil)
         }
         else {
             if indexPath.row == 0 {
@@ -196,11 +196,19 @@ class CardTableViewCell: UITableViewCell {
         ivBgUser.layer.cornerRadius = 36
         ivUser.layer.cornerRadius = 36
         
-        viewBgUser.layer.shadowRadius = 10
+        viewBgUser.layer.shadowRadius = 4.33
         viewBgUser.layer.shadowOffset = .zero
+        viewBgUser.layer.shadowOpacity = 1.0
         viewBgUser.layer.shadowColor = UIColor.lightGray.cgColor
         
     }
+    
+//    override func layoutSubviews() {
+//        layer.cornerRadius = 10.33
+//        
+////        let margins = contentView.layoutMarginsGuide
+////        contentView.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 16).isActive = true
+//    }
     
 }
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		25F671335FB8FEB969F35C59 /* Pods_VerdantEarth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D52D1DEBB87C283BD3A1CAA5 /* Pods_VerdantEarth.framework */; };
+		66325EEA279C88BC00CCAB74 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66325EE9279C88BC00CCAB74 /* ProfileViewController.swift */; };
 		6638AB15278CBD24007F5DF3 /* CalculateCarbonFootprintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6638AB14278CBD24007F5DF3 /* CalculateCarbonFootprintViewController.swift */; };
 		668C4D8F278B59C7007A2CF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C4D8E278B59C7007A2CF7 /* AppDelegate.swift */; };
 		668C4D93278B59C7007A2CF7 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668C4D92278B59C7007A2CF7 /* IntroductionViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66325EE9279C88BC00CCAB74 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6638AB14278CBD24007F5DF3 /* CalculateCarbonFootprintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateCarbonFootprintViewController.swift; sourceTree = "<group>"; };
 		668C4D8B278B59C7007A2CF7 /* VerdantEarth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VerdantEarth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668C4D8E278B59C7007A2CF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				668C4DB2278B616A007A2CF7 /* HomeViewController.swift */,
 				6638AB14278CBD24007F5DF3 /* CalculateCarbonFootprintViewController.swift */,
+				66325EE9279C88BC00CCAB74 /* ProfileViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				668C4D93278B59C7007A2CF7 /* IntroductionViewController.swift in Sources */,
 				668C4DAF278B5FB5007A2CF7 /* BaseUiViewController.swift in Sources */,
 				668C4D8F278B59C7007A2CF7 /* AppDelegate.swift in Sources */,
+				66325EEA279C88BC00CCAB74 /* ProfileViewController.swift in Sources */,
 				668C4DB3278B616A007A2CF7 /* HomeViewController.swift in Sources */,
 				668C4DB8278B83AA007A2CF7 /* UPCarouselFlowLayout.swift in Sources */,
 			);
