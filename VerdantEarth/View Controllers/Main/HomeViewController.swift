@@ -192,23 +192,31 @@ class CardTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         // Initialization code
-        viewBgUser.layer.cornerRadius = 36
-        ivBgUser.layer.cornerRadius = 36
-        ivUser.layer.cornerRadius = 36
+        viewBgUser.layer.cornerRadius = viewBgUser.frame.size.width/2
+//        ivBgUser.layer.cornerRadius = 36
+//        ivUser.layer.cornerRadius = 36
         
-        viewBgUser.layer.shadowRadius = 4.33
+        viewBgUser.layer.shadowRadius = 1.33
         viewBgUser.layer.shadowOffset = .zero
         viewBgUser.layer.shadowOpacity = 1.0
         viewBgUser.layer.shadowColor = UIColor.lightGray.cgColor
+        animateProfilePic()
         
     }
     
-//    override func layoutSubviews() {
-//        layer.cornerRadius = 10.33
-//        
-////        let margins = contentView.layoutMarginsGuide
-////        contentView.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 16).isActive = true
-//    }
+    func animateProfilePic() {
+        
+        let animation = CABasicAnimation()
+        animation.keyPath = "transform.scale"
+        animation.fromValue = 1
+        animation.toValue = 2
+        animation.duration = 0.5
+            
+        viewBgUser.layer.add(animation, forKey: "basic")
+        viewBgUser.layer.transform = CATransform3DMakeScale(2, 2, 1) // update
+//        picAnimated = !picAnimated
+        
+    }
     
 }
 

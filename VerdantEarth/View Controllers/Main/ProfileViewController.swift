@@ -18,6 +18,8 @@ class ProfileViewController: BaseUiViewController {
     
     @IBOutlet weak var btnDone: UIButton!
     
+    var picAnimated = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,19 +41,25 @@ class ProfileViewController: BaseUiViewController {
         super.viewWillAppear(animated)
         
         navigationController?.navigationBar.isHidden = true
-        
+        if picAnimated == false {
+            animateProfilePic()
+        }
+
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func animateProfilePic() {
+        
+        let animation = CABasicAnimation()
+        animation.keyPath = "transform.scale"
+        animation.fromValue = 1
+        animation.toValue = 2
+        animation.duration = 0.5
+            
+        viewProfilePicBg.layer.add(animation, forKey: "basic")
+        viewProfilePicBg.layer.transform = CATransform3DMakeScale(2, 2, 1) // update
+        picAnimated = !picAnimated
+        
     }
-    */
     
     @IBAction func btnDone(_ sender: Any) {
     }
